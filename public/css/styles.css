@@ -1,0 +1,32 @@
+body {
+    margin: 0px;
+    background-color: #fffffd;
+    font-size: 18px;
+}
+
+.mediumFont {
+    font-size: 20px;
+}
+
+fieldset {
+    background-color: #eeeeee;
+}
+  
+legend {
+    background-color: gray;
+    color: white;
+    padding: 5px 10px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child-big {
+    flex: 2;
+    margin-right: 30px;
+}
+
+.flex-child-small {
+    flex: 1;
+}
