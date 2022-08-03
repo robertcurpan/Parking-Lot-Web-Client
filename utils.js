@@ -1,7 +1,7 @@
 
 export function arrayRemoveTicket(arr, ticket) {
     return arr.filter(function(currentTicket) {
-        return currentTicket.spotId != ticket.spotId;
+        return currentTicket.parkingSpot.id != ticket.parkingSpot.id;
     });
 }
 
@@ -51,6 +51,6 @@ function getParkingSpotAsString(parkingSpot) {
 }
 
 function getTicketAsString(ticket) {
-    let ticketAsString = "[" + ticket.vehicle.driver.name + ", VIP: " + ticket.vehicle.driver.vipStatus + "] - " + ticket.vehicle.vehicleType + " (" + ticket.vehicle.price + ") -> spot ID: " + ticket.spotId;
+    let ticketAsString = "[" + ticket.vehicle.driver.name + ", VIP: " + ticket.vehicle.driver.vipStatus + "] - " + ticket.vehicle.vehicleType + " (" + ticket.vehicle.price + ") -> spot ID: " + ticket.parkingSpot.id;
     return ticketAsString;
 }
